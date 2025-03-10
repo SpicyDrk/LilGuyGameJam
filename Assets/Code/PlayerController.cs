@@ -24,10 +24,13 @@ public class PlayerController : MonoBehaviour
     
     private Vector3 _forward;
     private Vector3 _right;
+
+    private float startHeight;
     
     private void Awake()
     {
         playerCamera = Camera.main;
+        startHeight = transform.position.y;
     }
     void Start()
     {
@@ -48,6 +51,7 @@ public class PlayerController : MonoBehaviour
         {
             currentAttackType = AttackType.SlashOne;
         }
+        transform.position = new Vector3(transform.position.x, startHeight, transform.position.z);
     }
     
     private void ProcessClick()

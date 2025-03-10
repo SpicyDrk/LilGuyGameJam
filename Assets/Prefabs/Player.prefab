@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9094579625702269543}
   m_Layer: 6
   m_Name: SlashOne
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +53,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.55, y: 0.51, z: 0.11}
+  m_Size: {x: 0.43, y: 0.29, z: 0.38}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8549919808235976883
 MonoBehaviour:
@@ -67,7 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c6fcb4173fedf48a1b46f961914f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastingTime: 0.5
+  spriteLastingTime: 0.2
+  colliderTime: 0.1
 --- !u!212 &9094579625702269543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -262,7 +263,7 @@ MonoBehaviour:
   speed: 5
   runSpeed: 8
   turnSmoothTime: 0.1
-  attackCooldown: 0.5
+  attackCooldown: 0.2
   attackOne: {fileID: 314777370398598347}
   attackTwo: {fileID: 1631433337294923579}
   attackThree: {fileID: 9131113607513065379}
@@ -280,7 +281,7 @@ GameObject:
   - component: {fileID: 5144482781942471888}
   m_Layer: 6
   m_Name: SlashTwo
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,7 +320,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.55, y: 0.51, z: 0.11}
+  m_Size: {x: 0.55, y: 0.28, z: 0.38}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3939040337747381413
 MonoBehaviour:
@@ -333,7 +334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c6fcb4173fedf48a1b46f961914f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastingTime: 0.5
+  spriteLastingTime: 0.2
+  colliderTime: 0.1
 --- !u!212 &5144482781942471888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -647,7 +649,7 @@ GameObject:
   - component: {fileID: 8968002534919089571}
   m_Layer: 6
   m_Name: Stab
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -685,9 +687,9 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1, y: 0.41, z: 1}
+  m_Size: {x: 0.48, y: 0.23, z: 1.51}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5178971745848191932
 MonoBehaviour:
@@ -701,7 +703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c6fcb4173fedf48a1b46f961914f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastingTime: 0.5
+  spriteLastingTime: 0.2
+  colliderTime: 0.1
 --- !u!212 &8968002534919089571
 SpriteRenderer:
   m_ObjectHideFlags: 0
